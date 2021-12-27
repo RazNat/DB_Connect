@@ -1,4 +1,5 @@
 host: "localhost"
 user: "root"
 pwrd: "MySQL366#"
-db: "bad_sakila"
+db: "education"
+
