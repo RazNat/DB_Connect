@@ -11,7 +11,7 @@ config ={
 }
 cnx = mysql.connector.connect(**config)
 cursor = cnx.cursor()
-query=("select * from colleges")
+query=("select * from Colleges")
 cursor.execute(query)
 
 #print all rows
