@@ -4,6 +4,6 @@ ADD app.py .
 
 ADD db.yaml .
 
-RUN pip install mysql-connector-python pyyaml
+RUN pip install mysql-connector-python pyyaml pandas
 
 CMD ["python", "./app.py"]
