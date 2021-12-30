@@ -11,6 +11,6 @@ config ={
     'auth_plugin':  'mysql_native_password'
 }
 cnx = mysql.connector.connect(**config)
-query = 'select * from Colleges'
+query = 'select Name from Colleges'
 df = pd.read_sql(query, con = cnx)
 print(df)
