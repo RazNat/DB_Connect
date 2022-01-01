@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Congratulations | Cloud Run</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="preload" as="font">
+<link href="/static/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="hero">
+			<div class="message">
+				<h1>{{message}}</h1>
+				<h2>Congratulations, you successfully deployed a container image to Cloud Run</h2>
+                <h3>Dataframe pandas!!</h3>
+                {{data | safe}}
+			</div>
+		</div>
+
+		<div class="details">
+			<p>
+                This created the revision <code>{{Revision}}</code> of the Cloud Run service <code>{{Service}}</code>.
+            </p>
+
+			<p class="callout">
+				You can deploy any container to Cloud Run that listens for HTTP requests on the port defined by the
+				<code>PORT</code> environment variable.
+				Cloud Run will scale automatically based on requests and you never have to worry about
+				infrastructure.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
