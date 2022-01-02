@@ -16,7 +16,7 @@ config ={
 cnx = mysql.connector.connect(**config)
 query = 'select Name from Colleges'
 df = pd.read_sql(query, con = cnx)
-print(df)
+#print(df)
 """
 A sample Hello World server.
 
