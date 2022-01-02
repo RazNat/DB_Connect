@@ -1,4 +1,5 @@
-host: "34.130.77.73"
+#host: "34.130.77.73"
+host: "dbcloud-336721:northamerica-northeast2:bogle2022"
 user: "root"
 pwrd: "3umP3LecFgn53c5l"
 db: "education"
